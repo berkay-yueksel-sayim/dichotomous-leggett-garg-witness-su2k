@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "script": "p6_nail_independent.py",
+    "fire_threshold": 1.49,
+    "note": "independent code path: sequential Luders measurement statistics, no p6_engine import"
+  },
+  "rows": [
+    {
+      "degrees": 60,
+      "d2_neutral": 1.5000000000000004,
+      "d2_rho_opt": 1.5000000000000007,
+      "d2_fires": true,
+      "d3_neutral": 1.3332174935075478,
+      "d3_rho_opt": 1.4999955571081875,
+      "d3_fires": true
+    },
+    {
+      "degrees": 72,
+      "d2_neutral": 1.427050983124843,
+      "d2_rho_opt": 1.4270509831248432,
+      "d2_fires": false,
+      "d3_neutral": 1.3147551842621419,
+      "d3_rho_opt": 1.4999999797684287,
+      "d3_fires": true
+    },
+    {
+      "degrees": 90,
+      "d2_neutral": 1.0000000000000018,
+      "d2_rho_opt": 1.0000000000000029,
+      "d2_fires": false,
+      "d3_neutral": 1.276142373724342,
+      "d3_rho_opt": 1.4999999998826339,
+      "d3_fires": true
+    },
+    {
+      "degrees": 100,
+      "d2_neutral": 0.9998579795375331,
+      "d2_rho_opt": 0.9998579795375334,
+      "d2_fires": false,
+      "d3_neutral": 1.3057834144840532,
+      "d3_rho_opt": 1.499999966317763,
+      "d3_fires": true
+    }
+  ]
+}

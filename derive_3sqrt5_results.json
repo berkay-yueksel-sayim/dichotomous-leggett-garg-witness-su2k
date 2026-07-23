@@ -1,0 +1,84 @@
+{
+  "task": "closed analytic derivation K3_max(k=8,zhat)=3/sqrt5",
+  "objective": "f(theta,p)=1+2c-2c^2-2 p c(1-c), c=cos theta, p=n_z^2; observable fixed = zhat",
+  "correction": "z-hat is a 5-FOLD axis for k=8 (sigma_1 = 144deg rotation); an earlier note said '3-fold' (wrong). Value 1/5 & 3/sqrt5 unchanged; n_z^2=1/5 is the 5-fold<->5-fold icosahedral angle (cos=1/sqrt5).",
+  "sigma1_k8_angle_deg": 144.0,
+  "A1_value_at_point": {
+    "theta": 72,
+    "p": 0.2,
+    "f": 1.3416407864998738,
+    "target_3sqrt5": 1.3416407864998738
+  },
+  "A2_i_axis": "at 72 deg slope df/dp=-2c(1-c)<0 -> min p; 5-fold axes p in {1, 1/5} -> min 1/5 -> 3/sqrt5",
+  "A2_ii_closed": "f(c,p=1)=1 identically (rotation about observable axis) -> for c<=0, f<=f(p=1)=1; only c in (0,1) can exceed, A5's only such angle is 72deg",
+  "A2_ii_identity_err": 4.440892098500626e-16,
+  "A2_ii_angles": {
+    "0": {
+      "c": 1.0,
+      "slope_dfdp": -0.0,
+      "achievable_p": [
+        0.0,
+        0.219232
+      ],
+      "f_max": 1.0,
+      "f_at_p1": 1.0
+    },
+    "72": {
+      "c": 0.30901699437494745,
+      "slope_dfdp": -0.4270509831248423,
+      "achievable_p": [
+        0.2,
+        1.0
+      ],
+      "f_max": 1.3416407864998738,
+      "f_at_p1": 1.0
+    },
+    "120": {
+      "c": -0.4999999999999998,
+      "slope_dfdp": 1.4999999999999991,
+      "achievable_p": [
+        0.035191,
+        0.631476
+      ],
+      "f_max": 0.44721400000000033,
+      "f_at_p1": 1.0
+    },
+    "144": {
+      "c": -0.8090169943749473,
+      "slope_dfdp": 2.927050983124842,
+      "achievable_p": [
+        0.2,
+        1.0
+      ],
+      "f_max": 1.0,
+      "f_at_p1": 1.0
+    },
+    "180": {
+      "c": -1.0,
+      "slope_dfdp": 4.0,
+      "achievable_p": [
+        0.0,
+        0.276393,
+        0.723607
+      ],
+      "f_max": -0.105572,
+      "f_at_p1": 1.0
+    }
+  },
+  "A3_why_1over5": "cos(5fold,5fold)=phi/(2+phi)=1/sqrt5 (phi=(1+sqrt5)/2) -> n_z^2=1/5; maximizer=72deg about an adjacent 5-fold axis",
+  "global_max": 1.3416407864998738,
+  "argmax_theta_deg": 72,
+  "gateB": {
+    "closed_eq_numeric": true,
+    "argmax_match": true,
+    "k4_consistency_gives_1": true,
+    "k4_angles": [
+      0.0,
+      120.0,
+      180.0
+    ],
+    "k4_fmax": 1.0
+  },
+  "all_pass": true,
+  "conditions": "delta=0, braiding only, observable z-hat, j=1/2 2D-rep; proves the VALUE only"
+}

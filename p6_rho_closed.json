@@ -1,0 +1,56 @@
+{
+  "note": "closed (exact): rho=I/d=(3d-1)/(2d) odd /3/2 even; true sequential-LGI rho-opt (G_eff)=3/2 any d",
+  "correction": "2C-C valid only for stationary rho; general rho needs evolved-state C23 (G_eff); lambda_max(sym(V)) over all rho gives unphysical ~3.0 (non-stationary) - WRONG",
+  "budroni_emary": "max K3 dichotomic Lueders=3/2 dim-independent via rho-opt (1309.3678)",
+  "all_match": true,
+  "rows": [
+    {
+      "d": 2,
+      "parity": "even",
+      "K3_rho_Id": 1.5,
+      "cap_parity": 1.5,
+      "K3_LGI_rhoopt": 1.5,
+      "match": true
+    },
+    {
+      "d": 3,
+      "parity": "odd",
+      "K3_rho_Id": 1.3333333333333333,
+      "cap_parity": 1.3333333333333333,
+      "K3_LGI_rhoopt": 1.5,
+      "match": true
+    },
+    {
+      "d": 4,
+      "parity": "even",
+      "K3_rho_Id": 1.5,
+      "cap_parity": 1.5,
+      "K3_LGI_rhoopt": 1.5,
+      "match": true
+    },
+    {
+      "d": 5,
+      "parity": "odd",
+      "K3_rho_Id": 1.4,
+      "cap_parity": 1.4,
+      "K3_LGI_rhoopt": 1.5,
+      "match": true
+    },
+    {
+      "d": 6,
+      "parity": "even",
+      "K3_rho_Id": 1.5,
+      "cap_parity": 1.5,
+      "K3_LGI_rhoopt": 1.5,
+      "match": true
+    },
+    {
+      "d": 7,
+      "parity": "odd",
+      "K3_rho_Id": 1.4285714285714286,
+      "cap_parity": 1.4285714285714286,
+      "K3_LGI_rhoopt": 1.5,
+      "match": true
+    }
+  ]
+}

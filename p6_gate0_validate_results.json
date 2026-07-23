@@ -1,0 +1,110 @@
+{
+  "task": "gate-0 + engine validation (build check)",
+  "gate0": {
+    "4": {
+      "group_order": 24,
+      "max_over_Q": 1.0000000000000004,
+      "Q_Z": 1.0000000000000004,
+      "sanity": {
+        "F_orth": 2.220446049250313e-16,
+        "unit1": 2.2610626239330836e-16,
+        "unit2": 2.2284820772308004e-16,
+        "yang_baxter": 2.482534153247273e-16,
+        "cube_scalar": 3.2257902054300904e-16,
+        "pass_": true
+      }
+    },
+    "8": {
+      "group_order": 120,
+      "max_over_Q": 1.4270509831248452,
+      "Q_Z": 1.3416407864998745,
+      "sanity": {
+        "F_orth": 2.220446049250313e-16,
+        "unit1": 2.0529727016449574e-17,
+        "unit2": 6.66184997970764e-16,
+        "yang_baxter": 3.3422138886441676e-16,
+        "cube_scalar": 1.1433341248530478e-16,
+        "pass_": true
+      }
+    }
+  },
+  "gate0_reference": {
+    "k4_QZ": 1.0,
+    "k8_QZ": 1.3416407864998738,
+    "k4_maxQ": 1.0,
+    "k8_maxQ": 1.4270509831248424,
+    "k8_order": 120
+  },
+  "gate0_pass": true,
+  "sanity_j_ge_1": {
+    "j=1,k=4   (klein)": {
+      "twoJ": 2,
+      "d": 3,
+      "F_orth": 5.551115123125783e-16,
+      "unit1": 1.1397225222810654e-16,
+      "unit2": 1.2214818573833962e-15,
+      "yang_baxter": 5.266250202865052e-16,
+      "cube_scalar": 6.280369834735101e-16,
+      "pass_": true
+    },
+    "j=1,k=6   (klein)": {
+      "twoJ": 2,
+      "d": 3,
+      "F_orth": 5.551115123125783e-16,
+      "unit1": 2.2610626239330836e-16,
+      "unit2": 9.992582468950665e-16,
+      "yang_baxter": 6.728330954019106e-16,
+      "cube_scalar": 4.460875311128453e-16,
+      "pass_": true
+    },
+    "j=3/2,k=6 (gross)": {
+      "twoJ": 3,
+      "d": 4,
+      "F_orth": 6.661338147750939e-16,
+      "unit1": 2.220446049250313e-16,
+      "unit2": 8.881784197001252e-16,
+      "yang_baxter": 7.920071861333853e-16,
+      "cube_scalar": 9.485749680535094e-16,
+      "pass_": true
+    },
+    "j=3/2,k=8 (gross)": {
+      "twoJ": 3,
+      "d": 4,
+      "F_orth": 4.440892098500626e-16,
+      "unit1": 2.220446049250313e-16,
+      "unit2": 8.074201422896753e-16,
+      "yang_baxter": 6.866350197783356e-16,
+      "cube_scalar": 1.5989233124209857e-15,
+      "pass_": true
+    },
+    "j=2,k=8   (gross)": {
+      "twoJ": 4,
+      "d": 5,
+      "F_orth": 8.881784197001252e-16,
+      "unit1": 1.1102230246251565e-16,
+      "unit2": 1.776362403434953e-15,
+      "yang_baxter": 1.020560098144454e-15,
+      "cube_scalar": 2.4101047098148877e-15,
+      "pass_": true
+    },
+    "j=2,k=10  (gross)": {
+      "twoJ": 4,
+      "d": 5,
+      "F_orth": 9.992007221626409e-16,
+      "unit1": 2.2353417906481786e-16,
+      "unit2": 1.7763568394002505e-15,
+      "yang_baxter": 7.780013955782965e-16,
+      "cube_scalar": 8.945267301916492e-16,
+      "pass_": true
+    }
+  },
+  "sanity_pass": true,
+  "dim_coverage": [
+    3,
+    4,
+    5
+  ],
+  "dims_ge3_4_5_covered": true,
+  "engine_validated": true,
+  "fix_note": "sector indices taken from D instead of hardcoded (previously 2J=9/12 -> d<2 -> silently skipped); a skip now counts as FAIL and d in {3,4,5} is enforced. Closes the false PASS."
+}

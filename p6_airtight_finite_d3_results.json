@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "script": "p6_airtight_finite_d3.py",
+    "k_range": [
+      2,
+      12
+    ],
+    "fire_threshold": 1.49
+  },
+  "rows": [
+    {
+      "k": 4,
+      "j": "1",
+      "d": 3,
+      "group_order": 162,
+      "targeted_max": 1.5000000000000056,
+      "fires": true
+    },
+    {
+      "k": 8,
+      "j": "2",
+      "d": 3,
+      "group_order": 450,
+      "targeted_max": 1.4999999999812028,
+      "fires": true
+    },
+    {
+      "k": 12,
+      "j": "3",
+      "d": 3,
+      "group_order": 882,
+      "targeted_max": 1.499999999993821,
+      "fires": true
+    }
+  ],
+  "fired": [
+    {
+      "k": 4,
+      "j": "1"
+    },
+    {
+      "k": 8,
+      "j": "2"
+    },
+    {
+      "k": 12,
+      "j": "3"
+    }
+  ],
+  "n_finite_d3_tested": 3,
+  "n_fired": 3
+}

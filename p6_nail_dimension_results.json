@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "script": "p6_nail_dimension.py",
+    "fire_threshold": 1.49
+  },
+  "rows": [
+    {
+      "degrees": 60,
+      "d2_targeted_max": 1.5,
+      "d2_fires": true,
+      "d3_targeted_max": 1.5,
+      "d3_fires": true
+    },
+    {
+      "degrees": 72,
+      "d2_targeted_max": 1.4270509831248424,
+      "d2_fires": false,
+      "d3_targeted_max": 1.4999996200156553,
+      "d3_fires": true
+    },
+    {
+      "degrees": 90,
+      "d2_targeted_max": 1.0000000000000033,
+      "d2_fires": false,
+      "d3_targeted_max": 1.5000000000000009,
+      "d3_fires": true
+    },
+    {
+      "degrees": 100,
+      "d2_targeted_max": 0.9999999999999994,
+      "d2_fires": false,
+      "d3_targeted_max": 1.4999993100689302,
+      "d3_fires": true
+    }
+  ]
+}

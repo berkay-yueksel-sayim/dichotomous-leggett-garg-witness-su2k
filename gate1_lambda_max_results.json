@@ -1,0 +1,46 @@
+{
+  "gate": "closed-form max_U lambda_max(M(U))",
+  "method": "numpy eigvalsh on symmetric M(U)=2 sym(R)-sym(R^2); exact eigenvalues; max over finite group. NOT sampling.",
+  "analytic_eigenstructure": "M(U)=(1+2c-2c^2) I - 2c(1-c) n n^T ; eigenvalues {1, 1+2c-2c^2(x2)}; c=cos(theta_U)",
+  "over_claim_flag": "delta=0, braiding only, scope j=1/2 2D-rep",
+  "k4": {
+    "group_order": 24,
+    "max_lambda_max": 1.0000000000000004,
+    "maximizer_theta_deg": 180.0,
+    "maximizer_mhat": [
+      -0.8164965809277261,
+      0.0,
+      -0.5773502691896258
+    ],
+    "symmetry_err": 0.0,
+    "analytic_vs_eigvalsh_err": 1.7763568394002505e-15,
+    "sphere_scan_max": 1.0000000000000007,
+    "scan_consistent": true
+  },
+  "k2": {
+    "group_order": 48,
+    "max_lambda_max": 1.000000000000001,
+    "maximizer_theta_deg": 89.99999999999997,
+    "maximizer_mhat": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "symmetry_err": 0.0,
+    "analytic_vs_eigvalsh_err": 2.220446049250313e-15
+  },
+  "k8": {
+    "group_order": 120,
+    "max_lambda_max": 1.4270509831248435,
+    "maximizer_theta_deg": 71.99999999999999,
+    "maximizer_mhat": [
+      -0.6902124326973693,
+      -0.5511674210668143,
+      0.468851012267795
+    ],
+    "symmetry_err": 0.0,
+    "analytic_vs_eigvalsh_err": 2.220446049250313e-15
+  },
+  "note_k4": "all k=4 rotation angles in {0,120,180} deg -> 1+2c-2c^2 <= 1 -> lambda_max=1 per element -> max=1",
+  "interpretation": "the closed-form for-all step gives max_U lambda_max=1 for k=4; the value only, scoped to j=1/2 2D-rep"
+}

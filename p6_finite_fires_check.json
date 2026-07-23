@@ -1,0 +1,57 @@
+{
+  "note": "cross-check: does targeted witness (G_eff rho-opt) fire for FINITE reps? correspondence needs finite->NOT fire. fires:=targeted>=1.49",
+  "cells": [
+    {
+      "k": 4,
+      "j": "1/2",
+      "d": 2,
+      "dense": false,
+      "neutral_max": 1.0000000000000016,
+      "targeted_max": 1.0000000000000029,
+      "fires": false
+    },
+    {
+      "k": 8,
+      "j": "1/2",
+      "d": 2,
+      "dense": false,
+      "neutral_max": 1.4270499950859845,
+      "targeted_max": 1.427049995085985,
+      "fires": false
+    },
+    {
+      "k": 4,
+      "j": "1",
+      "d": 3,
+      "dense": false,
+      "neutral_max": 1.30997989022309,
+      "targeted_max": 1.4999999966225217,
+      "fires": true
+    },
+    {
+      "k": 5,
+      "j": "1",
+      "d": 3,
+      "dense": true,
+      "neutral_max": 1.3247945165035355,
+      "targeted_max": 1.499999999998549,
+      "fires": true
+    },
+    {
+      "k": 8,
+      "j": "2",
+      "d": 5,
+      "dense": true,
+      "neutral_max": 1.2798056749425735,
+      "targeted_max": 1.4999999999989053,
+      "fires": true
+    }
+  ],
+  "finite_firing": [
+    [
+      4,
+      "1",
+      3
+    ]
+  ]
+}

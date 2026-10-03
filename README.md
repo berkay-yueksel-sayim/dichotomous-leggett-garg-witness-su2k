@@ -1,14 +1,14 @@
 # Paper 4 v1.1 — Zenodo Build
 
 **Title:** A dichotomous Leggett–Garg witness for braid-representation density in SU(2)_k: exact at d=2, dimension-limited at d≥3
-**Author:** Berkay Yuksel Sayim
+**Author:** Berkay Yüksel Sayim
 **Email:** berksa@tutamail.com
 **ORCID:** [0009-0004-4993-7352](https://orcid.org/0009-0004-4993-7352)
 **Affiliation:** Independent Research, Germany
 **Version:** 1.1
 **Date:** 2026-07-17
 **Resource type:** Preprint
-**License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+**License:** paper, figures, and data — [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), see `LICENSE`; source code (`*.py`) — [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0), see `LICENSE-CODE`
 
 ## v1.1 changes (this release)
 
@@ -91,7 +91,7 @@ K₃ = 2 C(B) − C(B²) resolves braid-representation density across the SU(2)_
 At d=2 (the spin-½ fusion space) the witness resolves density exactly: it saturates the
 dimension-independent Lüders bound 3/2 on every dense representation and stays strictly
 below it on the finite ones, which occur precisely at k ∈ {2,4,8} — a sharp threshold.
-The k=4 representation is structurally inert (K₃=1 for every measurement axis) despite a
+The k=4 representation is structurally inert under K₃ at d=2 (K₃=1 for every measurement axis) despite a
 larger quantum dimension than k=3, its braid image being finite; and k=8 is pinned at
 3/√5 (at Q=ẑ; 1.427 axis-optimized). Both follow from the underlying SO(3) geometry.
 At d≥3 the same witness ceases to
@@ -105,19 +105,22 @@ This preprint is part of a series on Bell and Leggett–Garg correlations in
 Fibonacci-anyon and SU(2)_k braiding. It extends to the full SU(2)_k family the
 temporal-inequality companion (the Leggett–Garg letter):
 
-> B. Y. Sayim, *Leggett–Garg saturation and structural signatures in
-> Fibonacci-anyon braiding*, Zenodo preprint (2026), Concept-DOI
+> B. Y. Sayim, *Leggett–Garg K₃ Values Above 1 in Fibonacci-Anyon Braiding:
+> 99.998 % of the Lüders Bound, and Exactly 1 for Ising Braiding*, Zenodo
+> preprint (2026), Concept-DOI
 > [10.5281/zenodo.20372744](https://doi.org/10.5281/zenodo.20372744).
 
 Companion works in the same series:
 
-> B. Y. Sayim, *Sector-Dependent CHSH Violation in Fibonacci Anyons, and
-> Finite-Size Topological--CHSH Mutual Information in 2D Lattice Models*, Zenodo
+> B. Y. Sayim, *CHSH-Form Values Above 2 for Standard Fibonacci Anyons, and
+> the Non-Topological Origin of Finite-Size Sector–CHSH Mutual Information in
+> Z₂ Lattice Gauge Theory*, Zenodo
 > preprint (2026), Concept-DOI
 > [10.5281/zenodo.19600752](https://doi.org/10.5281/zenodo.19600752).
 >
-> B. Y. Sayim, *Generic CHSH Violation in Fibonacci Anyon Braiding: A Landscape
-> Analysis*, Zenodo preprint (2026), Concept-DOI
+> B. Y. Sayim, *CHSH-Form Values Above 2 in Fibonacci Anyon Braiding: A
+> Complete Landscape of Braid Words up to Length 12*, Zenodo
+> preprint (2026), Concept-DOI
 > [10.5281/zenodo.19601352](https://doi.org/10.5281/zenodo.19601352).
 >
 > B. Y. Sayim, *CHSH-Form Values Without Bell Nonlocality: Inapplicability of the
@@ -136,21 +139,25 @@ Concept-DOIs always resolve to the latest version regardless of title changes.)*
 
 | File | Role |
 |---|---|
-| `main_v1.1.tex` | LaTeX source (RevTeX 4-2, PRX style) |
-| `main_v1.1.pdf` | Compiled preprint |
+| `main_v1.2.tex` | LaTeX source (RevTeX 4-2, PRX style) |
+| `main_v1.2.pdf` | Compiled preprint |
 | `paper4_fig1_K3_vs_k_d2.pdf`, `.png` | Figure 1 |
 | `paper4_fig1_K3_vs_k_d2.py` | Figure-1 builder (self-contained; data embedded) |
-| `LICENSE` | CC BY 4.0 |
+| `p6_gate1_resolution_map.pdf`, `.png` | Figure 2 |
+| `LICENSE` | CC BY 4.0 — paper, figures, data |
+| `LICENSE-CODE` | Apache License 2.0 — source code (`*.py`) |
 | `README.md` | This file |
 
 **Reproduction code (NumPy + SciPy) and result data (JSON)**
+
+The `p6_` prefix denotes an internal pre-registration and is unrelated to the separately published Paper 6.
 
 | File | Role |
 |---|---|
 | `p6_engine.py` | projective F/R (q-6j/Racah) B_3 engine on the fusion space |
 | `p6_gate0_validate.py` + `…_results.json` | gate-0 / Yang–Baxter engine validation (App. A) |
 | `p6_dkj_fusion_dims.py` + `…_results.json` | fusion-space dimension per (k,j) and total-charge sector (App. B, Table `tab:sectors`) |
-| `p6_gate1_sweep.py` + `…_results.json` | (k,j) density-witness sweep (Table I, Fig. 1 data) |
+| `p6_gate1_sweep_results.json` + `p6_gate1_verify.py` + `p6_gate1_verify_results.json` | (k,j) density-witness correspondence table (Table I, Fig. 1 data); the verifier recomputes each row from the deposited braid word, and enumerates the full group for the finite rows |
 | `p6_rho_closed.py` + `p6_rho_closed.json` | closed-form caps (3d−1)/(2d), ρ-opt (§IV, App. C) |
 | `p6_finite_fires_check.py` + `…check.json` | neutral vs targeted at finite d=3 (§IV) |
 | `p6_airtight_finite_d3.py` + `…_results.json` | targeted witness fires on finite d=3 reps (Table II) |
@@ -164,9 +171,10 @@ Concept-DOIs always resolve to the latest version regardless of title changes.)*
 |---|---|---|
 | d=2 sweep, axis-optimized K₃ (Fig. 1 / Table I) | k=2,4→1.000; k=8→1.427; dense k=3,5,6,7,9,10→1.4997–1.5000 | `p6_gate1_sweep_results.json` → `rows[].lambda_max_Mtilde` |
 | k=8 at Q=ẑ | 3/√5 = 1.3416407865 (θ=72°, n_z²=1/5) | `derive_3sqrt5_results.json` → `global_max` |
-| k=4 structurally inert | K₃=1 for every axis (max_U λ_max=1.0 over the 24-element group) | `gate1_lambda_max_results.json` |
+| k=4 structurally inert under K₃ | K₃=1 for every axis (max_U λ_max=1.0 over the 24-element group) | `gate1_lambda_max_results.json` |
 | Finite d=3 reps fire (targeted) | (4,1)\|162, (8,2)\|450, (12,3)\|882 → all 1.500 | `p6_airtight_finite_d3_results.json` → `rows`; cf. `p6_finite_fires_check.json` |
 | Closed caps | (3d−1)/(2d) odd d, 3/2 even d; ρ-opt=3/2 ∀d | `p6_rho_closed.json` (`all_match: true`) |
+| Resolution map (Fig. 2), 48 cells | targeted: 24 cells; neutral: d=2 from the sweep, d≥3 closed form | `p6_gate1_sweep_results.json` → `rows[].lambda_max_Mtilde` + `p6_rho_closed.json` |
 | Dimension nail (2 solvers agree) | d=2: 60°→1.5, 72°→1.427, 90/100°→1.0; d=3⊕triv: all 1.500 | `p6_nail_dimension_results.json`, `p6_nail_independent_results.json` |
 | Fusion-sector dims (App. B, Table `tab:sectors`) | (4,1)→{0:1,2:3,4:1}; (8,2)→{0:1,2:3,4:5,6:3,8:1}; (12,3)→{0:1,2:3,4:5,6:7,8:5,10:3,12:1} | `p6_dkj_fusion_dims_results.json` → `table_sectors_cells` |
 | Gate-0 / Yang–Baxter sanity | YB residual ≲ 10⁻¹⁵ for d=2..5 | `p6_gate0_validate_results.json` |
@@ -178,7 +186,7 @@ scripts.
 
 ```bash
 python p6_gate0_validate.py         # engine gate-0 / Yang-Baxter validation
-python p6_gate1_sweep.py            # (k,j) density-witness sweep  -> Table I, Fig. 1 data
+python p6_gate1_verify.py           # re-check the (k,j) table from its braid words  -> Table I, Fig. 1 data
 python p6_rho_closed.py             # closed-form caps (3d-1)/(2d), rho-opt
 python p6_finite_fires_check.py     # neutral vs targeted at finite d=3
 python p6_airtight_finite_d3.py     # targeted witness fires on finite d=3 reps  -> Table II

@@ -40,11 +40,11 @@ def G_eff(B, Q):
     return DQ(A, Q) + Bd @ DQ(A, Q) @ B - DQ(B2d @ Q @ B2, Q)
 
 
-def targeted(B, Q):   # ρ-opt
+def targeted(B, Q):   # rho-opt
     G = G_eff(B, Q); return float(np.linalg.eigvalsh((G + G.conj().T)/2)[-1])
 
 
-def neutral(B, Q, d):  # ρ=I/d
+def neutral(B, Q, d):  # rho=I/d
     G = G_eff(B, Q); return float(np.real(np.trace((G + G.conj().T)/2))/d)
 
 
@@ -70,6 +70,10 @@ def rand_dich(d, rng):
     Vv, _ = np.linalg.qr(M); return 2*(Vv @ Vv.conj().T) - np.eye(d)
 
 
+N_PROBE_WORDS = 1500   # sample size of the finite-rep firing check
+PROBE_LENGTH = 12      # braid word length used for that sample
+
+
 def cell_max(k, twoj, which, n_rand=60, seed=0):
     twoJ, d = (D.largest(k, twoj) if which == "gross" else D.smallest_nontrivial(k, twoj))
     gen = E.braid_generators(k, twoj, twoJ); d = gen["d"]
@@ -78,8 +82,8 @@ def cell_max(k, twoj, which, n_rand=60, seed=0):
     if dense:   # for comparison only: sample
         gens = np.stack([E.to_sud(gen["s1"]), E.to_sud(gen["s1"].conj().T), E.to_sud(gen["s2"]), E.to_sud(gen["s2"].conj().T)])
         rng = np.random.default_rng(seed); G = []
-        for _ in range(1500):
-            idx = rng.integers(0, 4, size=12); B = np.eye(d, dtype=complex)
+        for _ in range(N_PROBE_WORDS):
+            idx = rng.integers(0, 4, size=PROBE_LENGTH); B = np.eye(d, dtype=complex)
             for t in idx: B = B @ gens[t]
             G.append(B)
     rng = np.random.default_rng(seed+5)

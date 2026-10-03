@@ -1,0 +1,456 @@
+{
+  "task": "verification of the (k,j) density-witness table",
+  "tolerance": 1e-06,
+  "rows": [
+    {
+      "k": 2,
+      "j": "1/2",
+      "d": 2,
+      "dense": false,
+      "stored_lambda_max_Mtilde": 1.0000000000000004,
+      "closed_form": {
+        "status": "no argmax_word in this row"
+      },
+      "full_enumeration": {
+        "group_order": 48,
+        "group_order_stored": 48,
+        "group_order_match": true,
+        "max": 1.0000000000000009,
+        "delta": 4.440892098500626e-16,
+        "match": true
+      },
+      "claim": "universal",
+      "evidence": "settled by full enumeration over |G| = 48"
+    },
+    {
+      "k": 3,
+      "j": "1/2",
+      "d": 2,
+      "dense": true,
+      "stored_lambda_max_Mtilde": 1.4999635097180388,
+      "closed_form": {
+        "word": "1i2i2i2i11i112i11i2i11111i1111i1i2i2i212i2i2i1i",
+        "value": 1.4999635097180288,
+        "delta": -9.992007221626409e-15,
+        "match": true
+      },
+      "full_enumeration": {
+        "status": "representation is dense; full enumeration not applicable"
+      },
+      "claim": "existential",
+      "evidence": "witness recomputed: deposited word reproduces the reported value"
+    },
+    {
+      "k": 4,
+      "j": "1/2",
+      "d": 2,
+      "dense": false,
+      "stored_lambda_max_Mtilde": 1.0000000000000009,
+      "closed_form": {
+        "status": "no argmax_word in this row"
+      },
+      "full_enumeration": {
+        "group_order": 24,
+        "group_order_stored": 24,
+        "group_order_match": true,
+        "max": 1.0000000000000004,
+        "delta": -4.440892098500626e-16,
+        "match": true
+      },
+      "claim": "universal",
+      "evidence": "settled by full enumeration over |G| = 24"
+    },
+    {
+      "k": 5,
+      "j": "1/2",
+      "d": 2,
+      "dense": true,
+      "stored_lambda_max_Mtilde": 1.4997195722715468,
+      "closed_form": {
+        "word": "1i112i2i212i12i1i1i21i212i1i1i1i2i1i",
+        "value": 1.4997195722715497,
+        "delta": 2.886579864025407e-15,
+        "match": true
+      },
+      "full_enumeration": {
+        "status": "representation is dense; full enumeration not applicable"
+      },
+      "claim": "existential",
+      "evidence": "witness recomputed: deposited word reproduces the reported value"
+    },
+    {
+      "k": 6,
+      "j": "1/2",
+      "d": 2,
+      "dense": true,
+      "stored_lambda_max_Mtilde": 1.4998979643895,
+      "closed_form": {
+        "word": "1i2112i12i12i2i1i1i22i21",
+        "value": 1.4998979643894867,
+        "delta": -1.3322676295501878e-14,
+        "match": true
+      },
+      "full_enumeration": {
+        "status": "representation is dense; full enumeration not applicable"
+      },
+      "claim": "existential",
+      "evidence": "witness recomputed: deposited word reproduces the reported value"
+    },
+    {
+      "k": 7,
+      "j": "1/2",
+      "d": 2,
+      "dense": true,
+      "stored_lambda_max_Mtilde": 1.500000000000003,
+      "closed_form": {
+        "word": "2i2i2i",
+        "value": 1.500000000000001,
+        "delta": -1.9984014443252818e-15,
+        "match": true
+      },
+      "full_enumeration": {
+        "status": "representation is dense; full enumeration not applicable"
+      },
+      "claim": "existential",
+      "evidence": "witness recomputed: deposited word reproduces the reported value"
+    },
+    {
+      "k": 8,
+      "j": "1/2",
+      "d": 2,
+      "dense": false,
+      "stored_lambda_max_Mtilde": 1.427050983124845,
+      "closed_form": {
+        "status": "no argmax_word in this row"
+      },
+      "full_enumeration": {
+        "group_order": 120,
+        "group_order_stored": 120,
+        "group_order_match": true,
+        "max": 1.4270509831248452,
+        "delta": 2.220446049250313e-16,
+        "match": true
+      },
+      "claim": "universal",
+      "evidence": "settled by full enumeration over |G| = 120"
+    },
+    {
+      "k": 9,
+      "j": "1/2",
+      "d": 2,
+      "dense": true,
+      "stored_lambda_max_Mtilde": 1.499970970622511,
+      "closed_form": {
+        "word": "1i22112i2i2i2i2i1i221i2i2i1i21i2i2i2i11i222i2i21i",
+        "value": 1.4999709706224855,
+        "delta": -2.55351295663786e-14,
+        "match": true
+      },
+      "full_enumeration": {
+        "status": "representation is dense; full enumeration not applicable"
+      },
+      "claim": "existential",
+      "evidence": "witness recomputed: deposited word reproduces the reported value"
+    },
+    {
+      "k": 10,
+      "j": "1/2",
+      "d": 2,
+      "dense": true,
+      "stored_lambda_max_Mtilde": 1.5000000000000144,
+      "closed_form": {
+        "word": "2122i2i21i112122i2i22i212i2i22i2i2i2211i22i",
+        "value": 1.4999999999999951,
+        "delta": -1.9317880628477724e-14,
+        "match": true
+      },
+      "full_enumeration": {
+        "status": "representation is dense; full enumeration not applicable"
+      },
+      "claim": "existential",
+      "evidence": "witness recomputed: deposited word reproduces the reported value"
+    },
+    {
+      "k": 4,
+      "j": "1",
+      "d": 3,
+      "dense": false,
+      "stored_lambda_max_Mtilde": 1.5000000000000022,
+      "closed_form": {
+        "status": "no argmax_word in this row"
+      },
+      "full_enumeration": {
+        "group_order": 162,
+        "group_order_stored": 162,
+        "group_order_match": true,
+        "max": 1.500000000000002,
+        "delta": -2.220446049250313e-16,
+        "match": true
+      },
+      "claim": "universal",
+      "evidence": "settled by full enumeration over |G| = 162"
+    },
+    {
+      "k": 5,
+      "j": "1",
+      "d": 3,
+      "dense": true,
+      "stored_lambda_max_Mtilde": 1.499998130352878,
+      "closed_form": {
+        "word": "2i2i1i1i1i1i21i2112221i11i22212i",
+        "value": 1.4999981303528778,
+        "delta": -2.220446049250313e-16,
+        "match": true
+      },
+      "full_enumeration": {
+        "status": "representation is dense; full enumeration not applicable"
+      },
+      "claim": "existential",
+      "evidence": "witness recomputed: deposited word reproduces the reported value"
+    },
+    {
+      "k": 6,
+      "j": "1",
+      "d": 3,
+      "dense": true,
+      "stored_lambda_max_Mtilde": 1.499945402521016,
+      "closed_form": {
+        "word": "11i2i21111i221i2111i121i1221i1i1221i22i2",
+        "value": 1.4999454025209875,
+        "delta": -2.842170943040401e-14,
+        "match": true
+      },
+      "full_enumeration": {
+        "status": "representation is dense; full enumeration not applicable"
+      },
+      "claim": "existential",
+      "evidence": "witness recomputed: deposited word reproduces the reported value"
+    },
+    {
+      "k": 7,
+      "j": "1",
+      "d": 3,
+      "dense": true,
+      "stored_lambda_max_Mtilde": 1.5000000000000027,
+      "closed_form": {
+        "word": "22222i",
+        "value": 1.4999999999999996,
+        "delta": -3.1086244689504383e-15,
+        "match": true
+      },
+      "full_enumeration": {
+        "status": "representation is dense; full enumeration not applicable"
+      },
+      "claim": "existential",
+      "evidence": "witness recomputed: deposited word reproduces the reported value"
+    },
+    {
+      "k": 8,
+      "j": "1",
+      "d": 3,
+      "dense": true,
+      "stored_lambda_max_Mtilde": 1.499971687249331,
+      "closed_form": {
+        "word": "2i2i1112212i122i12i12i11i1221i",
+        "value": 1.499971687249319,
+        "delta": -1.199040866595169e-14,
+        "match": true
+      },
+      "full_enumeration": {
+        "status": "representation is dense; full enumeration not applicable"
+      },
+      "claim": "existential",
+      "evidence": "witness recomputed: deposited word reproduces the reported value"
+    },
+    {
+      "k": 9,
+      "j": "1",
+      "d": 3,
+      "dense": true,
+      "stored_lambda_max_Mtilde": 1.4999999997272366,
+      "closed_form": {
+        "word": "22121111i1i2i2i112i2i121i11i2i2111i112i11i",
+        "value": 1.4999999997272453,
+        "delta": 8.659739592076221e-15,
+        "match": true
+      },
+      "full_enumeration": {
+        "status": "representation is dense; full enumeration not applicable"
+      },
+      "claim": "existential",
+      "evidence": "witness recomputed: deposited word reproduces the reported value"
+    },
+    {
+      "k": 10,
+      "j": "1",
+      "d": 3,
+      "dense": true,
+      "stored_lambda_max_Mtilde": 1.5000000000000058,
+      "closed_form": {
+        "word": "2i2i222i22i22i2i",
+        "value": 1.500000000000019,
+        "delta": 1.3322676295501878e-14,
+        "match": true
+      },
+      "full_enumeration": {
+        "status": "representation is dense; full enumeration not applicable"
+      },
+      "claim": "existential",
+      "evidence": "witness recomputed: deposited word reproduces the reported value"
+    },
+    {
+      "k": 6,
+      "j": "3/2",
+      "d": 4,
+      "dense": true,
+      "stored_lambda_max_Mtilde": 1.4998989292570308,
+      "closed_form": {
+        "word": "12i12i1i12i1i1i2111i212i222i2i212i21i2i1i112i",
+        "value": 1.4998989292570442,
+        "delta": 1.3322676295501878e-14,
+        "match": true
+      },
+      "full_enumeration": {
+        "status": "representation is dense; full enumeration not applicable"
+      },
+      "claim": "existential",
+      "evidence": "witness recomputed: deposited word reproduces the reported value"
+    },
+    {
+      "k": 7,
+      "j": "3/2",
+      "d": 4,
+      "dense": true,
+      "stored_lambda_max_Mtilde": 1.5000000000000058,
+      "closed_form": {
+        "word": "11111i",
+        "value": 1.5,
+        "delta": -5.773159728050814e-15,
+        "match": true
+      },
+      "full_enumeration": {
+        "status": "representation is dense; full enumeration not applicable"
+      },
+      "claim": "existential",
+      "evidence": "witness recomputed: deposited word reproduces the reported value"
+    },
+    {
+      "k": 8,
+      "j": "3/2",
+      "d": 4,
+      "dense": true,
+      "stored_lambda_max_Mtilde": 1.4999999385741554,
+      "closed_form": {
+        "word": "112i2i2i1i1i1i21i1i2i12i2i2i2i121i222i21222i1i1i",
+        "value": 1.4999999385741676,
+        "delta": 1.2212453270876722e-14,
+        "match": true
+      },
+      "full_enumeration": {
+        "status": "representation is dense; full enumeration not applicable"
+      },
+      "claim": "existential",
+      "evidence": "witness recomputed: deposited word reproduces the reported value"
+    },
+    {
+      "k": 9,
+      "j": "3/2",
+      "d": 4,
+      "dense": true,
+      "stored_lambda_max_Mtilde": 1.499999939351803,
+      "closed_form": {
+        "word": "12i1i1i21i2i21i1i21i21112i1121i1i1i2i12i2i2i11i",
+        "value": 1.4999999393517922,
+        "delta": -1.0880185641326534e-14,
+        "match": true
+      },
+      "full_enumeration": {
+        "status": "representation is dense; full enumeration not applicable"
+      },
+      "claim": "existential",
+      "evidence": "witness recomputed: deposited word reproduces the reported value"
+    },
+    {
+      "k": 10,
+      "j": "3/2",
+      "d": 4,
+      "dense": true,
+      "stored_lambda_max_Mtilde": 1.500000000000036,
+      "closed_form": {
+        "word": "212i12i2i11i2i22i1i2i2i2i2i2i22i222i22i211i1i1i2i",
+        "value": 1.5000000000000202,
+        "delta": -1.5765166949677223e-14,
+        "match": true
+      },
+      "full_enumeration": {
+        "status": "representation is dense; full enumeration not applicable"
+      },
+      "claim": "existential",
+      "evidence": "witness recomputed: deposited word reproduces the reported value"
+    },
+    {
+      "k": 8,
+      "j": "2",
+      "d": 5,
+      "dense": true,
+      "stored_lambda_max_Mtilde": 1.4999991284015197,
+      "closed_form": {
+        "word": "1i221212i2i2i12i212i2211i21i2i2i1i21i22i222",
+        "value": 1.4999991284015524,
+        "delta": 3.26405569239796e-14,
+        "match": true
+      },
+      "full_enumeration": {
+        "status": "representation is dense; full enumeration not applicable"
+      },
+      "claim": "existential",
+      "evidence": "witness recomputed: deposited word reproduces the reported value"
+    },
+    {
+      "k": 9,
+      "j": "2",
+      "d": 5,
+      "dense": true,
+      "stored_lambda_max_Mtilde": 1.4999998525243887,
+      "closed_form": {
+        "word": "22222i2212i1221i122i",
+        "value": 1.499999852524378,
+        "delta": -1.0658141036401503e-14,
+        "match": true
+      },
+      "full_enumeration": {
+        "status": "representation is dense; full enumeration not applicable"
+      },
+      "claim": "existential",
+      "evidence": "witness recomputed: deposited word reproduces the reported value"
+    },
+    {
+      "k": 10,
+      "j": "2",
+      "d": 5,
+      "dense": true,
+      "stored_lambda_max_Mtilde": 1.5000000000000282,
+      "closed_form": {
+        "word": "2i22i2i1i2i2i1i12i2i2i2i1i22i1112221i2i22i2222",
+        "value": 1.4999999999999674,
+        "delta": -6.084022174945858e-14,
+        "match": true
+      },
+      "full_enumeration": {
+        "status": "representation is dense; full enumeration not applicable"
+      },
+      "claim": "existential",
+      "evidence": "witness recomputed: deposited word reproduces the reported value"
+    }
+  ],
+  "mismatches": 0,
+  "figure": {
+    "status": "written",
+    "file": "p6_gate1_resolution_map.png",
+    "panels": [
+      "neutral",
+      "targeted"
+    ],
+    "cells": 24
+  }
+}
